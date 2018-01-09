@@ -8,9 +8,16 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: minmax(150px, auto);
   grid-gap: 10px;
+  text-align: center
 }
 
 .grid div {
   background: lightblue;
   padding: 30px;
+}
+
+.nested {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
