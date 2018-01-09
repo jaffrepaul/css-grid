@@ -9,15 +9,16 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(100px, auto);
   grid-gap: 10px;
   grid-template-areas:
-  "header"
-  "nav"
-  "main"
-  "section"
-  "aside"
-  "footer";
+  "header header header header"
+  "nav nav main main"
+  "aside aside main main"
+  "section section section section"
+  "section section section section"
+  "footer footer footer footer ";
 }
 
 header {
