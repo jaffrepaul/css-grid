@@ -12,13 +12,31 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: minmax(100px, auto);
   grid-gap: 10px;
+  max-width: 960px;
   grid-template-areas:
   "header header header header"
-  "nav nav main main"
-  "aside aside main main"
-  "section section section section"
+  "main main main main"
+  "main main main main"
+  "nav nav aside aside"
   "section section section section"
   "footer footer footer footer ";
+}
+
+@media screen and (min-width: 760px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 960px;
+    grid-template-areas:
+    "header header header header"
+    "nav nav main main"
+    "aside aside main main"
+    "section section section section"
+    "section section section section"
+    "footer footer footer footer ";
+  }
 }
 
 header {
