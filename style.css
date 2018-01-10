@@ -10,14 +10,15 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(100px, auto);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 10px;
   max-width: 960px;
   grid-template-areas:
   "header header header header"
-  "main main main main"
-  "main main main main"
   "nav nav aside aside"
+  "main main main main"
+  "main main main main"
+  "main main main main"
   "section section section section"
   "footer footer footer footer ";
 }
@@ -26,7 +27,6 @@ body {
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(100px, auto);
     grid-gap: 10px;
     max-width: 960px;
     grid-template-areas:
