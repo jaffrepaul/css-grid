@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  /* grid-template-areas:
+  "header header header header header header header header header header header header"
+  ". . nav nav nav nav nav nav nav nav . ."
+  ". . main main main main main main main main . ."
+  ". . section section section section section section section section . ."
+  ". . aside aside aside aside aside aside aside aside . ."
+  "footer footer footer footer footer footer footer footer footer footer footer footer"; */
+}
+
+header {
+  /* grid-area: header; */
+  grid-column: 1 / 13;
+}
+
+nav {
+  /* grid-area: nav; */
+  grid-column: 3 / 11;
+}
+
+main {
+  /* grid-area: main; */
+  grid-column: 3 / 11;
+}
+
+section {
+  /* grid-area: section; */
+  grid-column: 3 / 11;
+}
+
+aside {
+  /* grid-area: aside; */
+  grid-column: 3 / 11;
+}
+
+footer {
+  /* grid-area: footer; */
+  grid-column: 1 / 13;
+}
+
+.grid > * {
+  background: lightblue;
+  padding: 30px;
+}
