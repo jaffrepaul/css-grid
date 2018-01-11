@@ -30,6 +30,11 @@ nav {
   grid-column: 3 / 11;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 main {
   /* grid-area: main; */
   grid-column: 3 / 11;
@@ -53,4 +58,8 @@ footer {
 .grid > * {
   background: lightblue;
   padding: 30px;
+}
+
+li {
+  list-style: none;
 }
